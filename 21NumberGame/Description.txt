@@ -1,0 +1,27 @@
+This code is a simple turn-based game simulation between a user and the computer. In the game, players take turns adding specific ranges of numbers to a list. The goal is to be the first to make the total list reach exactly 20. The game works as follows:
+
+Start Selection: The player decides whether to play first or second ('F' or 'S').
+
+If the player chooses to go first, they start the game. If they choose to go second, the computer starts.
+Player's Turn:
+
+The player specifies how many numbers they want to add, between one and four. If an invalid input is given, the player is disqualified and loses the game.
+If the list is initially empty, the numbers start from 1, and the specified amount is added to the list. If the list is not empty, new numbers are added starting from the last number in the list.
+If the last number added to the list is 20, the player wins the game, and the game ends.
+Computer's Turn:
+
+The computer randomly selects a number (between 0 and 4). However, selecting 0 disrupts the game logic, so it should choose between 1 and 4 instead.
+The computer adds numbers to the list in the same way as the player. If the last number added to the list is 20, the computer wins the game, and the game ends.
+Turn Switching: The user and the computer take turns alternately. In each turn, the current state of the list and the numbers added are displayed on the screen.
+
+End of the Game:
+
+If either player adds a number that makes the total exactly 20, that player wins, and the game ends.
+Invalid input or a rule violation (e.g., adding more numbers than allowed) results in disqualification.
+This game is a turn-based competition to fill a list. Players must act strategically, considering both their own choices and the opponent's moves. The game dynamically adds numbers to the list, with the computer making automated decisions.
+
+
+
+
+
+
