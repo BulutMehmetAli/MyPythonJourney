@@ -21,7 +21,7 @@ def hash_Compare(file1 , file2):
     
     return h1.hexdigest() , h2.hexdigest()
 
-msg1, msg2 = hash_Compare(r"C:\Users\bulut\OneDrive\Masaüstü\N3tworkPDF\NETWORK FORENSİCS-2.pdf",r"C:\Users\bulut\OneDrive\Masaüstü\Network\1733589689013.pdf") 
+msg1, msg2 = hash_Compare(r"C:\Users\y.pdf",r"C:\Users\x.pdf") 
   
 if(msg1 != msg2): 
     print("These files are not identical") 
