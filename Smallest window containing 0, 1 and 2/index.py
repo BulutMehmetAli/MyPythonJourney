@@ -16,6 +16,34 @@ def findSmallest(s):
     return rmin if rmin != sys.maxsize else -1
 
 
-s = "545019895926555011334355552"
+s = "5450198295926555334355552"
 
 print(findSmallest(s))
+
+# Implement sliding window
+
+import sys
+def findSmallest(s):
+    myArray = {'0':0 , '1':0 , '2':0}
+    rmin = sys.maxsize
+    left = 0
+    for i in range(len(s)):
+
+        if s[i] in myArray:
+            myArray[s[i]] += 1
+
+        while all(myArray[c] > 0 for c in myArray):
+            rmin = min(rmin , i - left + 1)
+
+            if s[left] in myArray:
+                myArray[s[i]] -= 1
+            left += 1
+                 
+        
+    return rmin if rmin != sys.maxsize else -1
+
+s = "5450198295926555334355552"
+
+print(findSmallest(s))
+
+    
