@@ -1,0 +1,2 @@
+Given a singly linked list, the task is to remove every kth node of the linked 
+list. Assume that k is always less than or equal to the length of the Linked List.
