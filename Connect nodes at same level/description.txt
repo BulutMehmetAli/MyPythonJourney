@@ -1,0 +1,4 @@
+Given a binary tree, the task is to connect the nodes that are at the same level. 
+Given an addition nextRight pointer for the same.Initially, all the next right pointers point to garbage values, 
+set these pointers to the point next right for each node.
+
